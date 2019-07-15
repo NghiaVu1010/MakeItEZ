@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>MakeItEz</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <a class="navbar-brand" href="index.html">MakeItEz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+    
+      <!-- Nav Login, Registration, About -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main">
+      <div class="container mt-5">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Register</li>
+        </ol>
+      </div>
+      
+      <div class="container text-center mb-4">
+        <h3>Create your MakeItEz account.</h3>
+        <h3>Signing up is easy and only takes a minute.</h3>
+      </div>
+
+      <!-- Register Form : Name, Pass, Confirm, Email, Zip, Preferences -->
+      <form action="recipe_search.html">
+        <!-- 
+          TODO: More efficient way of positioning img without interrupting forms
+            Figure out alignment with rest of fields (FirstName/LastName)
+            Add in maxLength and password requirements
+        -->
+        <img src="img/lettuceRegister.jpg" alt="lettuce" class="rounded-circle lettuce"/>
+
+        <div class="form-row ml-3">
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" id="userFirstName" name="userFirstName" required="required" autofocus="autofocus" placeholder="First Name">
+          </div>
+          <div class="form-group col-md-2">
+            <input type="text" class="form-control" id="userLastName" name="userLastName" required="required" placeholder="Last Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 ml-3">
+            <input type="text" class="form-control" id="userName" name="userName" required="required" autofocus="autofocus" placeholder="User Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 ml-3">
+            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 ml-3">
+            <input type="password" class="form-control" id="userPasswordConfirm" name="userPasswordConfirm" required="required" placeholder="Re-type Password">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 ml-3">
+            <input type="email" class="form-control" id="userEmail" name="userEmail" required="required" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 ml-3">
+            <input type="text" class="form-control" id="userZip" name="userZi[" required="required" placeholder="Zip Code">
+          </div>
+        </div>
+
+        <fieldset class="form-group">
+          <div class="row">
+            <h4 class="col-form-label col-md-4 ml-4">What are some of your preferences?</h4>
+            <div class="col-sm-10 ml-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="gridRadios" id="gridCheck1" value="option1">
+                <label class="form-check-label" for="gridCheck1">Appetizers</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="gridRadios" id="gridCheck2" value="option2">
+                <label class="form-check-label" for="gridCheck2">Entrees</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="gridRadios" id="gridCheck3" value="option3">
+                <label class="form-check-label" for="gridCheck3">Desserts</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group row">
+          <div class="col-sm-10 ml-4">
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-success">Register</button>
+            <small id="secureHelp" class="form-text text-muted">Don't worry! Your information won't be saved because we don't have a database!</small>
+          </div> 
+        </div>
+      </form>
+    </main>
+
+    <footer class="container">
+      <hr>
+      <p>&copy;Hartcode Academy 2019</p>
+      <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
+    </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
