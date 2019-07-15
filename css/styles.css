@@ -11,47 +11,45 @@ h1, h2 {
     font-size: .75rem;
 }
 
-.breadcrumb {
-    background-color: red ;
+.lettuce {
+    position: absolute;
+    margin: 0 600px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: blue;
-    }   
     h1 {
         padding-top: 20px;
     }
-    .logo {
+    .logo{
         display: none;
     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
-    body {
-        background-color: red;
-    }   
+    .lettuce {
+        display: none;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: green;
+    .lettuce {
+        display: initial;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: yellow;
-    }   
+    .lettuce {
+        display: initial;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: pink;
-    }   
+    .lettuce {
+        display: initial;
+    }
 } 
