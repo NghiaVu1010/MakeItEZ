@@ -22,11 +22,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
         
-      <!-- Login and Registration -->
+      <!-- Nav Login and Registration -->
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link active" href="#">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="register.html">Register</a>
@@ -38,32 +38,56 @@
       </div>
     </nav>
 
-    <!-- Brand, Logo, and Catchphrase -->
+    <!-- Breadcrumb navigation -->
     <main role="main">
-      <div class="jumbotron">
-        <div class="container text-right">
-          <h1 class="display-4">MakeItEz</h1>
-          <img src="img/logo.jpg" alt="logo" class="logo"/>
-		  <h2>Make cooking easy again!</h2>
-        </div>
+      <div class="mt-5 container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
+          </ol>
+        </nav>
       </div>
-          
-      <!-- Welcome Section -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2>Ready to get started?</h2>
-            <p>This will be your one stop shop to cook like a michelin star chef in no time!</p>
-            <p>Click the button below to get cooking!</p>
-            <p><a class="btn btn-success" href="register.html" role="button">Get Started &raquo;</a></p>
-          </div>
-        
+      
+      <div class="text-center mb-4">
+        <h3 class="mb-3">MakeItEz</h3>
+        <img class="mb-4 logo" src="img/logo.jpg" alt="logo" width="72" height="72">
+        <p>Make cooking easy again!</p>
+      </div>
 
+      <!-- Login Section 
+        TODO: maxLength on inputfields, help hover, clickable features
+      -->
+      <form action="recipe_search.html">
+        <div class="form-group row">
           <div class="col-md-4 offset-md-4">
-            <a class="twitter-timeline" href="https://twitter.com/GordonRamsay" data-tweet-limit="1">Tweets by @twittername</a>
+            <input type="text" class="form-control" id="userName" name="userName" required="required" autofocus="autofocus" placeholder="User Name">
           </div>
         </div>
-      </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 offset-md-4">
+            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password">
+          </div>
+        </div>
+            
+        <div class="form-group form-check row">
+          <div class="col-md-4 offset-md-4">
+            <input type="checkbox" class="form-check-input" id="checkRemember">
+            <label class="form-check-label" for="checkRemember">Remember Me</label>
+            <span> - </span>
+            <a href="#">Forgot Password?</a>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col-md-4 offset-md-4">
+            <button type="submit" class="btn btn-success">Login</button>
+          </div> 
+        </div> 
+      </form>
+
+      <p class="text-center signUp">Don't have a MakeItEz account? <a href="register.html">Sign up now!</a></p>
     </main>
     
     <footer class="container">
@@ -77,6 +101,5 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
