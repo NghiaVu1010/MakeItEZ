@@ -6,6 +6,15 @@
 h1, h2 {
     color: #ffffff;
 }
+
+.signUp {
+    font-size: .75rem;
+}
+
+.breadcrumb {
+    background-color: red ;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
