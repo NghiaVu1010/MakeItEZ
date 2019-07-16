@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>MakeItEz</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <a class="navbar-brand" href="#">MakeItEz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <!-- Login and Registration -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <img class="rounded-circle" src="img/robAvatar.png" alt="avatar">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Brand, Logo, and Catchphrase -->
+    <main>
+      <div class="jumbotron trending-bg">
+        <div class="container text-right">
+          <h1 class="display-4 white">What's cooking?</h1>
+          <h2 class="white">See what's trending today!</h2>
+          <p><a class="btn btn-md btn-success" href="recipes/taco_recipe.html" role="button">Trending &raquo;</a></p>
+        </div>
+      </div>
+          
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Search</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Search Section and Results-->
+      <div class="container">
+        <div class="row">
+
+          <!-- Search Box -->
+          <form class="col-md-4" method="GET">
+            <div class="form-group">
+              <input type="text" class="form-control" id="recipeSearch" placeholder="Search...">
+            </div>
+
+            <!-- Difficulty selection -->
+            <select class="custom-select mb-2">
+              <option selected>Select Difficulty...</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="expert">Expert</option>
+            </select>
+
+            <!-- Course preference -->
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="appetizerCheckbox" value="appetizer">
+              <label class="form-check-label" for="appetizerCheckbox">Appetizers</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="entreesCheckbox" value="entrees">
+              <label class="form-check-label" for="entreesCheckbox">Entrees</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="dessertCheckbox" value="dessert">
+              <label class="form-check-label" for="dessertCheckbox">Dessert</label>
+            </div>
+
+            <!-- Main ingredient/type -->
+            <h6>Main Ingredient:</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="chickenRadio" value="option1">
+              <label class="form-check-label" for="chickenRadio">Chicken</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="beefRadio" value="option2">
+              <label class="form-check-label" for="beefRadio">Beef</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="porkRadio" value="option3">
+              <label class="form-check-label" for="porkRadio">Pork</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="seafoodRadio" value="option4">
+              <label class="form-check-label" for="seafoodRadio">Seafood</label>
+            </div>
+
+            <!-- Range slider for cook time -->
+            <div>
+              <label for="timeLimit">Cooking Time:</label>
+              <input type="range" class="custom-range" min="1" max="6" id="timeLimit">
+            </div>
+
+            <!-- Toggle Switches for additional parameters -->
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="glutenSwitch">
+              <label class="custom-control-label" for="glutenSwitch">Gluten Free</label>
+            </div>
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" disabled id="veganSwitch">
+              <label class="custom-control-label" for="veganSwitch">Vegan</label>
+            </div>
+
+            <p><a class="btn btn-primary" href="#" role="button">Search &raquo;</a></p>
+          </form>
+
+          <article class="col-md-8">
+            <h3>Search Results: </h3>
+
+            <!-- Pagination Navigation -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+            <hr>
+
+            <!-- Results of the search -->
+            <section>  
+              <img src="img/tacos.jpg" alt="logo" class="search mr-2" width="150" height="150"/>
+              <h4>Tacos</h4>
+              <h5>Prep Time: 30 mins.</h5>
+              <p>With only six simple ingredients, you can serve up ten delicious tacos in just 
+                half an hour. If you’ve ever wondered how to make tacos that are as good as 
+                the ones you enjoy at your local taqueria, this easy recipe is your answer. 
+                <a href="recipes/taco_recipe.html">Details &raquo;</a></p>
+              <hr>
+            </section>
+            <section>
+              <img src="img/lobster.jpg" alt="logo" class="search mr-2" width="150" height="150">
+              <h4>Lobster Roll</h4>
+              <h5>Prep Time: 20 mins.</h5>
+              <p>A classic meal here in New England is the Lobster Roll!  Although the original 
+                Maine lobster roll is simply cooked lobster meat and melted butter on a 
+                buttered and grilled hot dog roll, most restaurants make a New England lobster
+                roll with a lobster salad made with a mayonnaise base.
+                <a href="recipes/lobster_recipe.html">Details &raquo;</a></p>
+              <hr>
+            </section>
+            <section>
+              <img src="img/spaghetti.jpg" alt="logo" class="search mr-2" width="150" height="150"/>
+              <h4>Spaghetti</h4>
+              <h5>Prep Time: 40 mins.</h5>
+              <p>It's really easy to make spaghetti at home! Using jarred tomato sauce means you 
+                can have dinner on the table in under a half hour, too. Keep on reading to find 
+                out how to make a basic spaghetti with meat sauce! 
+                <a href="recipes/spaghetti_recipe.html">Details &raquo;</a></p>
+            </section>
+        </article>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="container">
+      <hr>
+      <p>&copy;Hartcode Academy 2019</p>
+      <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
+	</footer>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
