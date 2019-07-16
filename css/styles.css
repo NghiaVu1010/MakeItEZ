@@ -1,6 +1,15 @@
-.jumbotron {
+.landing-bg {
     background-image: url("../img/background.jpg");
-    background-size: cover !important;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.trending-bg {
+    background-image: url("../img/trending.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
 }
 
 .white {
@@ -14,6 +23,11 @@
 .lettuce {
     position: absolute;
     margin: 0 600px;
+}
+
+.search {
+    float: left;
+    clear: both;
 }
 
 /* Extra small devices (phones, 600px and down) */
