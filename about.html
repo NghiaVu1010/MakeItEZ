@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <title>MakeItEz</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <a class="navbar-brand" href="index.html">MakeItEz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+
+      <!-- Nav Login, Registration, About -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Carousel Start -->
+      <div id="myCarousel" class="carousel slide pb-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Image Slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block align-items-center justify-content-center min-vh-100" src="img/tacos.jpg" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>What are we taco-ing about?</h1>
+                <p>Come learn how to make delicious tacos and the EZ-iest way to do it!</p>
+                <p><a class="btn btn-lg btn-success" href="register.html" role="button">Register today!</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block align-items-center justify-content-center min-vh-100" src="img/lobster.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>It's how we roll.</h1>
+                <p>You can talk the talk, but can you roll the roll?</p>
+                <p><a class="btn btn-lg btn-success" href="login.html" role="button">Get rolling</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block align-items-center justify-content-center min-vh-100" src="img/spaghetti.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Copy, Pasta.</h1>
+                <p>Almost as simple as copying our steps and pasting it to your plate, almost.</p>
+                <p><a class="btn btn-lg btn-success" href="#" role="button">Copy that</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls for prev and next -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Carousel End -->
+    
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="container">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140" src="img/default.png" alt="First about">
+            <h2>Neo</h2>
+            <p>Creator and developer of this website.</p>
+            <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140" src="img/rob.png" alt="Second about">
+            <h2>Robert Frenette</h2>
+            <p>Connosiuer of all foods, mainly lobster rolls.</p>
+            <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140" src="img/default.png" alt="Third about">
+            <h2>Gordon Ramsay</h2>
+            <p>Refused to comment.</p>
+            <p><a class="btn btn-success" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+        
+        <!-- About section, each having a space -->
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Taco-bout getting started!</h2>
+            <p class="lead">The origins of the taco are not precisely known, and etymologies for the culinary usage of the word are generally theoretical. According to the Real Academia Española, publisher of Diccionario de la Lengua Española, the word taco describes a typical Mexican dish of a maize tortilla folded around food. This meaning of the Spanish word "taco" is a Mexican innovation, but in other dialects "taco" is used to mean "wedge; wad, plug; billiard cue; blowpipe; ramrod; short, stocky person; [or] short, thick piece of wood." In this non-culinary usage, the word "taco" has cognates in other European languages, including the French word "tache" and the English word "tack (nail)."</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" width="400" height="400" src="img/tacos.jpg" alt="taco image">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">They see me rollin'.</h2>
+            <p class="lead">A lobster roll is a sandwich native to New England and the Canadian Maritimes. It is made of lobster meat served on a grilled hot dog-style bun with the opening on the top rather than the side. The filling may also contain butter, lemon juice, salt and black pepper, with variants made in some parts of New England replacing the butter with mayonnaise. Other versions may contain diced celery or scallion. Potato chips or french fries are the typical sides.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image" width="400" height="400" src="img/lobster.jpg" alt="lobster image">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Anything is <b>pastable</b>.</h2>
+            <p class="lead">The art of pasta making and the devotion to the food as a whole has evolved since pasta was first conceptualized. It is estimated that Italians eat over 60 pounds (27 kg) of pasta per person, per year, easily beating Americans, who eat about 20 pounds (9.1 kg) per person. Pasta is so beloved in Italy that individual consumption exceeds the average production of wheat of the country; thus Italy frequently imports wheat for pasta making. In contemporary society pasta is ubiquitous and individuals can find a variety of types in local supermarkets. With the worldwide demand for this staple food, pasta is now largely mass-produced in factories and only a tiny proportion is crafted by hand.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image" width="400" height="400" src="img/spaghetti.jpg" alt="spaghetti image">
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+    </main>
+    
+    <footer class="container">
+      <p>&copy;Hartcode Academy 2019</p>
+      <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
+	</footer>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
