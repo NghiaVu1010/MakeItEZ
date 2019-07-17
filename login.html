@@ -8,9 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>MakeItEz</title>
   </head>
@@ -49,25 +46,24 @@
         </nav>
       </div>
       
-      <div class="text-center mb-4">
-        <h3 class="mb-3">MakeItEz</h3>
-        <img class="mb-4 logo" src="img/logo.jpg" alt="logo" width="72" height="72">
-        <p>Make cooking easy again!</p>
+      <div class="row">>
+        <div class="col-md-4 offset-md-4 text-center mb-4">
+          <h3 class="mb-3">MakeItEz</h3>
+          <img class="mb-4 logo" src="img/logo.jpg" alt="logo">
+          <p>Make cooking easy again!</p>
+        </div>
       </div>
 
-      <!-- Login Section 
-        TODO: maxLength on inputfields, help hover, clickable features
-      -->
       <form action="recipe_search.html">
         <div class="form-group row">
           <div class="col-md-4 offset-md-4">
-            <input type="text" class="form-control" id="userName" name="userName" required="required" autofocus="autofocus" placeholder="User Name">
+            <input type="text" class="form-control" id="userName" name="userName" required="required" autofocus="autofocus" placeholder="User Name" maxlength="20">
           </div>
         </div>
 
         <div class="form-group row">
           <div class="col-md-4 offset-md-4">
-            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password">
+            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password" maxlength="18">
           </div>
         </div>
             
