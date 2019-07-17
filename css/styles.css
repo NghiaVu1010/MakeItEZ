@@ -6,10 +6,8 @@
 }
 
 .trending-bg {
-    background-image: url("../img/trending.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
 }
 
 .white {
@@ -25,9 +23,11 @@
     margin: 0 600px;
 }
 
-.search {
+.searchImg {
     float: left;
     clear: both;
+    width: 150px;
+    height: 150px;
 }
 
 #recipeImg {
@@ -39,35 +39,55 @@
     h1 {
         padding-top: 20px;
     }
-    .logo{
+    .logo, .searchImg {
         display: none;
+    }
+    .trending-bg{
+        background-image: url("../img/trending_md.jpg");
+        height: 300px;
     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
-    .lettuce {
+    .lettuce, .searchImg {
         display: none;
+    }
+    .trending-bg{
+        background-image: url("../img/trending_md.jpg");
+        height: 300px;
     }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .lettuce {
+    .lettuce, .searchImg {
         display: initial;
+    }
+    .trending-bg{
+        background-image: url("../img/trending.jpg");
+        height: 400px;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .lettuce {
+    .lettuce, .searchImg {
         display: initial;
+    }
+    .trending-bg{
+        background-image: url("../img/trending.jpg");
+        height: 400px;
     }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .lettuce {
+    .lettuce, .searchImg {
         display: initial;
+    }
+    .trending-bg{
+        background-image: url("../img/trending.jpg");
+        height: 400px;
     }
 } 
