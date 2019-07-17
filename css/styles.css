@@ -39,7 +39,7 @@
     h1 {
         padding-top: 20px;
     }
-    .logo, .searchImg {
+    .logo, .searchImg, .featurette-image {
         display: none;
     }
     .trending-bg{
@@ -50,7 +50,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
-    .lettuce, .searchImg {
+    .lettuce, .searchImg, .featurette-image {
         display: none;
     }
     .trending-bg{
@@ -61,7 +61,7 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .lettuce, .searchImg {
+    .lettuce, .searchImg, .featurette-image {
         display: initial;
     }
     .trending-bg{
@@ -72,7 +72,7 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .lettuce, .searchImg {
+    .lettuce, .searchImg, .featurette-image {
         display: initial;
     }
     .trending-bg{
@@ -83,7 +83,7 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .lettuce, .searchImg {
+    .lettuce, .searchImg, .featurette-image {
         display: initial;
     }
     .trending-bg{
