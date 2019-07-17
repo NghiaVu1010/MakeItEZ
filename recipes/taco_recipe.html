@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <title>MakeItEz</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <a class="navbar-brand" href="#">MakeItEz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <!-- Navigation for MyProfile and Logout -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <img class="rounded-circle" src="../img/rob_avatar.png" alt="avatar">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mt-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../recipe_search.html">Search</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Recipe</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Selected recipe profile with instructions -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <section>  
+              <img src="../img/tacos_md.jpg" class="mr-2 mb-2" id="recipeImg" alt="recipe"/>
+              <h4>First In, First Out Tacos</h4>
+              <h5>Prep Time: 30 mins.</h5>
+              <h6>Submitted by: <a href="#">Neo</a></h6>
+              <p>With only six simple ingredients, you can serve up ten delicious tacos in just 
+                half an hour. If you’ve ever wondered how to make tacos that are as good as 
+                the ones you enjoy at your local taqueria, this easy recipe is your answer.</p>
+            </section>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Steps</th>
+                  <th scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Cook beef in 10-inch skillet over medium heat 8-10 minutes, stirring occasionally, until brown.</td>
+                <td>drain after</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Stir salsa into beef. Heat to boiling, stirring constantly; reduce heat to medium-low.</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Cook 5 minutes, stirring occasionally. Pour beef mixture into large serving bowl.</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Heat taco shells as directed on package.</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Serve taco shells with beef mixture, lettuce, tomato and cheese.</td>
+                  <td>guacamole optional</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>First come, first serve! Enjoy!</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Expandable extras at bottom -->
+            <section>
+              <div class="accordion" id="accordionTips">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-success collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Expert Tips
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTips">
+                    <div class="card-body">
+                      <p>Create a small condiment bar to serve alongside your tacos: in addition to the lettuce, tomato and cheese, set out small bowls of chopped avocado, sliced radishes, sweet bell pepper, additional salsa and fresh cilantro.</p>
+                      <p>Prefer a taco bowl? Spoon the salsa-seasoned beef onto a bed of shredded lettuce, topped with the tomatoes and cheese. Sprinkle with crushed tortilla chips for added crunch.</p>
+                      <p>Look for shredded Mexican cheese blends where you’d find the Cheddar cheese—they’re a mix of cheddar, Monterey Jack, Colby, and sometimes a sprinkle of a mild chili powder.</p>
+                      <p>Switch it up: try using ground chicken or ground turkey instead of ground beef in the tacos.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        More Info
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTips">
+                    <div class="card-body">
+                      <p>Food historians aren’t entirely sure about the exact origins of Mexico’s most famous culinary export. 
+                      In Jeffrey M. Pilcher’s book, <a href="#">Planet Taco: A Global History of Mexican Food</a>, he suggests that the dish 
+                      might have become popular with 18th century silver miners, who named the handheld food after small 
+                      explosive charges used to excavate ore. The dish grew in popularity through the growth of taquerias in 
+                      Mexico City. When tacos became part of the fast-food landscape, Americans discovered a deep and abiding 
+                      hunger for the meaty, crunchy, spicy food. One reason for the popularity of this beef taco recipe is 
+                      that it calls for simple ingredients like ground beef, chunky salsa and taco shells. You can customize 
+                      the recipe with ground chicken or turkey.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </section>
+          </div>
+
+          <!-- Ingredient listing -->
+          <aside class="col-md-4">
+            <h4>Ingredients:</h4>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>pound lean ground beef</td>
+                  <td>at least 80%</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>cup of salsa</td>
+                  <td>your choice</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>taco shells</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>1/2</td>
+                  <td>head lettuce, shredded</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>medium tomato, chopped</td>
+                  <td>3/4 cup</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>cup shredded cheddar cheese</td>
+                  <td>4 ounces</td>
+                </tr>
+              </tbody>
+            </table>
+          </aside>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="container">
+      <hr>
+      <p>&copy;Hartcode Academy 2019</p>
+      <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
+	</footer>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
