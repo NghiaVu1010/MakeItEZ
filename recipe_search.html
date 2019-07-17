@@ -22,14 +22,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
         
-      <!-- Login and Registration -->
+      <!-- Profile with dropdown capabilities and quick logout -->
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <img class="rounded-circle" src="img/rob_avatar.png" alt="avatar">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Profile</a>
+            <div class="btn-group">
+              <button type="button" class="btn btn-success">My Profile</button>
+              <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">My Recipes</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="login.html">Log Out</a>
+              </div>
+            </div>
+
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html">Log out</a>
@@ -38,7 +50,7 @@
       </div>
     </nav>
 
-    <!-- Brand, Logo, and Catchphrase -->
+    <!-- Brand and current trending -->
     <main>
       <div class="jumbotron trending-bg">
         <div class="container text-right">
@@ -94,19 +106,19 @@
             <!-- Main ingredient/type -->
             <h6 class="mt-2">Main Ingredient:</h6>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="chickenRadio" id="chickenRadio" value="chicken">
+              <input class="form-check-input" type="radio" name="mainRadio" id="chickenRadio" value="chicken">
               <label class="form-check-label" for="chickenRadio">Chicken</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="beefRadio" id="beefRadio" value="beef">
+              <input class="form-check-input" type="radio" name="mainRadio" id="beefRadio" value="beef">
               <label class="form-check-label" for="beefRadio">Beef</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="porkRadio" id="porkRadio" value="pork">
+              <input class="form-check-input" type="radio" name="mainRadio" id="porkRadio" value="pork">
               <label class="form-check-label" for="porkRadio">Pork</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="seafoodRadio" id="seafoodRadio" value="seafood">
+              <input class="form-check-input" type="radio" name="mainRadio" id="seafoodRadio" value="seafood">
               <label class="form-check-label" for="seafoodRadio">Seafood</label>
             </div>
 
