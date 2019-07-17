@@ -26,13 +26,13 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <img class="rounded-circle" src="img/robAvatar.png" alt="avatar">
+            <img class="rounded-circle" src="img/rob_avatar.png" alt="avatar">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.html">My Profile</a>
+            <a class="nav-link" href="#">My Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="register.html">Log out</a>
+            <a class="nav-link" href="login.html">Log out</a>
           </li>
         </ul>
       </div>
@@ -60,10 +60,12 @@
       <!-- Search Section and Results-->
       <div class="container">
         <div class="row">
-
-          <!-- Search Box -->
           <form class="col-md-4" method="GET">
-            <div class="form-group">
+            <!-- Search Box -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+              </div>
               <input type="text" class="form-control" id="recipeSearch" placeholder="Search...">
             </div>
 
@@ -90,21 +92,21 @@
             </div>
 
             <!-- Main ingredient/type -->
-            <h6>Main Ingredient:</h6>
+            <h6 class="mt-2">Main Ingredient:</h6>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="chickenRadio" value="option1">
+              <input class="form-check-input" type="radio" name="chickenRadio" id="chickenRadio" value="chicken">
               <label class="form-check-label" for="chickenRadio">Chicken</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="beefRadio" value="option2">
+              <input class="form-check-input" type="radio" name="beefRadio" id="beefRadio" value="beef">
               <label class="form-check-label" for="beefRadio">Beef</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="porkRadio" value="option3">
+              <input class="form-check-input" type="radio" name="porkRadio" id="porkRadio" value="pork">
               <label class="form-check-label" for="porkRadio">Pork</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="seafoodRadio" value="option4">
+              <input class="form-check-input" type="radio" name="seafoodRadio" id="seafoodRadio" value="seafood">
               <label class="form-check-label" for="seafoodRadio">Seafood</label>
             </div>
 
@@ -115,11 +117,11 @@
             </div>
 
             <!-- Toggle Switches for additional parameters -->
-            <div class="custom-control custom-switch">
+            <div class="custom-control custom-switch my-1">
               <input type="checkbox" class="custom-control-input" id="glutenSwitch">
               <label class="custom-control-label" for="glutenSwitch">Gluten Free</label>
             </div>
-            <div class="custom-control custom-switch">
+            <div class="custom-control custom-switch my-1">
               <input type="checkbox" class="custom-control-input" disabled id="veganSwitch">
               <label class="custom-control-label" for="veganSwitch">Vegan</label>
             </div>
@@ -148,8 +150,8 @@
 
             <!-- Results of the search -->
             <section>  
-              <img src="img/tacos.jpg" alt="logo" class="search mr-2" width="150" height="150"/>
-              <h4>Tacos</h4>
+              <img src="img/tacos_md.jpg" alt="logo" class="searchImg mr-2"/>
+              <h4>First In, First Out Tacos</h4>
               <h5>Prep Time: 30 mins.</h5>
               <p>With only six simple ingredients, you can serve up ten delicious tacos in just 
                 half an hour. If you’ve ever wondered how to make tacos that are as good as 
@@ -158,8 +160,8 @@
               <hr>
             </section>
             <section>
-              <img src="img/lobster.jpg" alt="logo" class="search mr-2" width="150" height="150">
-              <h4>Lobster Roll</h4>
+              <img src="img/lobster_md.jpg" alt="logo" class="searchImg mr-2"/>
+              <h4>Compiled High Lobster Rolls</h4>
               <h5>Prep Time: 20 mins.</h5>
               <p>A classic meal here in New England is the Lobster Roll!  Although the original 
                 Maine lobster roll is simply cooked lobster meat and melted butter on a 
@@ -169,8 +171,8 @@
               <hr>
             </section>
             <section>
-              <img src="img/spaghetti.jpg" alt="logo" class="search mr-2" width="150" height="150"/>
-              <h4>Spaghetti</h4>
+              <img src="img/spaghetti_md.jpg" alt="logo" class="searchImg mr-2"/>
+              <h4>Spaghetti Code</h4>
               <h5>Prep Time: 40 mins.</h5>
               <p>It's really easy to make spaghetti at home! Using jarred tomato sauce means you 
                 can have dinner on the table in under a half hour, too. Keep on reading to find 
