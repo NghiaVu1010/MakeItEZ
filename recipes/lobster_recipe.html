@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <title>MakeItEz</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+      <a class="navbar-brand" href="#">MakeItEz</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        
+      <!-- Navigation for MyProfile and Logout -->
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <img class="rounded-circle" src="../img/rob_avatar.png" alt="avatar">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mt-5">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="../recipe_search.html">Search</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Recipe</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Selected recipe profile with instructions -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <section>  
+              <img src="../img/lobster_md.jpg" class="mr-2 mb-2" id="recipeImg" alt="recipe"/>
+              <h4>Compiled High Lobster Rolls</h4>
+              <h5>Prep Time: 20 mins.</h5>
+              <h6>Submitted by: <a href="#">You</a></h6>
+              <p>A classic meal here in New England is the Lobster Roll!  Although the original 
+                  Maine lobster roll is simply cooked lobster meat and melted butter on a 
+                  buttered and grilled hot dog roll, most restaurants make a New England lobster
+                  roll with a lobster salad made with a mayonnaise base.</p>
+            </section>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Steps</th>
+                  <th scope="col">Notes</th>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>In medium bowl, stir together lobster, mayonnaise, seafood seasoning, tarragon.</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Salt and pepper just until combined.</td>
+                  <td>Set aside.</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Heat 10-inch skillet over medium-high heat. Place cut sides down in skillet; cook about 2 minutes or until toasted.</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Spread butter on cut sides of buns.</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Place buns on plates; fill with lettuce and lobster mixture.</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Execute consume sequence</td>
+                  <td>&nbsp;</td>
+                  <td><button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button></td>
+                  <td><button type="button" class="btn btn-danger"><i class="far fa-times-circle"></i></button></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="stepNum" placeholder="#">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="stepDesc" placeholder="Step">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="stepNotes" placeholder="Notes">
+                    </div>
+                  </td>
+                  <td colspan="2">
+                    <button type="button" class="btn btn-secondary">Add</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Expandable extras at bottom -->
+            <section>
+              <div class="accordion" id="accordionTips">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-success collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Expert Tips
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTips">
+                    <div class="card-body">
+                      <p>You can also add 1/2 teaspoon dried dill weed to the lobster mixture for a slightly different taste.</p>
+                      <p>Top assembled lobster rolls with another sprinkle or two of seafood seasoning, if desired, for extra flavor.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-info collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        More Info
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTips">
+                    <div class="card-body">
+                      <p>As far back as 1970, chopped lobster meat heated in drawn butter was served on a hot dog bun at road 
+                          side stands. Lobster rolls in the U.S. are associated with the state of Maine, but are also commonly 
+                          available at seafood restaurants in the other New England states and on Eastern Long Island, where 
+                          lobster fishing is common.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            </section>
+          </div>
+
+          <!-- Ingredient listing -->
+          <aside class="col-md-4">
+            <h4>Ingredients:</h4>
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>lb cooked lobster meat or 2 packages (8 oz each) refrigerated imitation lobster chunks</td>
+                  <td>cut into bite-size pieces</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>tablespoons mayonnaise</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>1/2</td>
+                  <td>teaspoon seafood seasoning</td>
+                  <td>from 6-oz container</td>
+                </tr>
+                <tr>
+                  <td>1/2</td>
+                  <td>teaspoon dried tarragon leaves</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>salt and pepper to taste</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>tablespoon butter</td>
+                  <td>softened</td>
+                </tr>
+                  <tr>
+                  <td>4</td>
+                  <td>hot dog buns</td>
+                  <td>split</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>butter lettuce</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ingredientNum" placeholder="#">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ingredientItem" placeholder="Item">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ingredientNotes" placeholder="Notes">
+                    </div>
+                    <button type="button" class="btn btn-secondary">Edit</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </aside>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="container">
+      <hr>
+      <p>&copy;Hartcode Academy 2019</p>
+      <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
+	</footer>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
