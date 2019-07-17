@@ -1,11 +1,4 @@
-.landing-bg {
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-}
-
-.trending-bg {
+.trending-bg, .landing-bg {
     background-size: cover;
     background-position: center;
 }
@@ -34,6 +27,40 @@
     float: left;
 }
 
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #00bb22;
+}
+
+blockquote:after {
+    display: block;
+    padding-left: 10px;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 50px;
+    top: 0px;
+    color: #00bb22;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     h1 {
@@ -44,6 +71,10 @@
     }
     .trending-bg{
         background-image: url("../img/trending_md.jpg");
+        height: 300px;
+    }
+    .landing-bg {
+        background-image: url("../img/background_md.jpg");
         height: 300px;
     }
 } 
@@ -57,6 +88,10 @@
         background-image: url("../img/trending_md.jpg");
         height: 300px;
     }
+    .landing-bg {
+        background-image: url("../img/background_md.jpg");
+        height: 300px;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -64,8 +99,12 @@
     .lettuce, .searchImg, .featurette-image {
         display: initial;
     }
-    .trending-bg{
+    .trending-bg {
         background-image: url("../img/trending.jpg");
+        height: 400px;
+    }
+    .landing-bg {
+        background-image: url("../img/background.jpg");
         height: 400px;
     }
 } 
@@ -79,6 +118,10 @@
         background-image: url("../img/trending.jpg");
         height: 400px;
     }
+    .landing-bg {
+        background-image: url("../img/background.jpg");
+        height: 400px;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -88,6 +131,10 @@
     }
     .trending-bg{
         background-image: url("../img/trending.jpg");
+        height: 400px;
+    }
+    .landing-bg {
+        background-image: url("../img/background.jpg");
         height: 400px;
     }
 } 
