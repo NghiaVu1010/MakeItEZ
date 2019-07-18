@@ -49,7 +49,8 @@
       </div>
 
       <!-- Register Form : Name, Pass, Confirm, Email, Zip, Preferences -->
-      <form action="recipe_search.html">
+      <!-- <form action="recipe_search.html" method="POST"> -->
+      <form id="regForm" action="#">
         <img src="img/lettuceRegister.jpg" alt="lettuce" class="rounded-circle lettuce"/>
 
         <div class="form-row mx-3">
@@ -70,12 +71,14 @@
         <div class="form-group row">
           <div class="col-md-4 mx-3">
             <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password" maxlength="18">
+            <small id="passHelp" class="form-text">Must contain at least one number, one uppercase, lowercase, and 8-18 characters.</small>
           </div>
         </div>
 
         <div class="form-group row">
           <div class="col-md-4 mx-3">
             <input type="password" class="form-control" id="userPasswordConfirm" name="userPasswordConfirm" required="required" placeholder="Re-type Password" maxlength="18">
+            <small id="passConfirm" class="form-text">Your password did not match.</small>
           </div>
         </div>
 
@@ -115,13 +118,13 @@
         <!-- Modal for terms and conditions, that you have to accept -->
         <div class="form-group row">
           <div class="col-sm-10 ml-4">
-            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="reset" class="btn btn-secondary" id="resetBtn">Reset</button>
             <button type="submit" class="btn btn-success">Register</button>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" name="terms" id="terms" value="terms" required>
               <label class="form-check-label" for="terms">I accept the <a href="" data-toggle="modal" data-target="#termsAndCond">terms and conditions</a></label>
             </div>
-            <div class="modal" id="termsAndCond" tabindex="-1" role="dialog" aria-labelledby="scrollTerms" aria-hidden="true">
+            <div class="modal" id="termsAndCond" tabindex="-1" role="dialog" aria-labelledby="terms" aria-hidden="true">
               <div class="modal-dialog modal-dialog-scrollable" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -151,10 +154,12 @@
       <small class="form-text text-muted">This is not actually sponsored by Gordon Ramsay.</small>
     </footer>
     
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

@@ -63,7 +63,8 @@
 
         <div class="form-group row">
           <div class="col-md-4 offset-md-4">
-            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password" maxlength="18">
+            <input type="password" class="form-control" id="userPassword" name="userPassword" required="required" placeholder="Password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your password is incorrect. Passwords must have at least one number, one uppercase, lowercase letters, and 8-18 characters">
           </div>
         </div>
             
