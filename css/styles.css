@@ -28,6 +28,10 @@
     text-decoration: none !important;
 }
 
+.searchLink:hover {
+    color: #ff0000;
+}
+
 #recipeImg {
     float: left;
 }
@@ -64,6 +68,16 @@ blockquote:after {
     right: 50px;
     top: 0px;
     color: #00bb22;
+}
+
+#passHelp {
+    display: none;
+    color: #ff0000;
+}
+
+#passConfirm {
+    display: none;
+    color: #ff0000;
 }
 
 /* Extra small devices (phones, 600px and down) */
