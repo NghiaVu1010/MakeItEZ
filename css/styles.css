@@ -96,6 +96,10 @@ blockquote:after {
         background-image: url("../img/background_md.jpg");
         height: 300px;
     }
+    .trend-title h1, h2{
+        font-size: 2em;
+        margin-top: 10px;
+    }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -110,6 +114,9 @@ blockquote:after {
     .landing-bg {
         background-image: url("../img/background_md.jpg");
         height: 300px;
+    }
+    .trend-title h1, h2{
+        font-size: 2em;
     }
 } 
 
@@ -126,6 +133,9 @@ blockquote:after {
         background-image: url("../img/background.jpg");
         height: 400px;
     }
+    .trend-title h1, h2{
+        font-size: 3em;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -133,13 +143,17 @@ blockquote:after {
     .lettuce, .searchImg, .featurette-image {
         display: initial;
     }
-    .trending-bg{
+    .trending-bg {
         background-image: url("../img/trending.jpg");
         height: 400px;
+        
     }
     .landing-bg {
         background-image: url("../img/background.jpg");
         height: 400px;
+    }
+    .trend-title h1, h2{
+        font-size: 3em;
     }
 } 
 
@@ -155,5 +169,8 @@ blockquote:after {
     .landing-bg {
         background-image: url("../img/background.jpg");
         height: 400px;
+    }
+    .trend-title h1, h2{
+        font-size: 3em;
     }
 } 
